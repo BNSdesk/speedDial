@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NewTab</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/images/favicon.svg">     
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="date">
+                <div class="digital-clock">
+                    <div id="the-date"></div>
+                    <br/>
+                    <div id="clock" class="clock-div"></div>
+                    <div id="seconds-s"></div>                  
+                </div>
+            </div>
+
+            <dev class="central">
+                <div class="search-menu">
+                    <form id="ggle">
+                        <a href="http://google.com"><img class="img-goo" src="images/google_logo.png" alt="Google"  draggable="false"></a>                       
+                        <input id="input-go" class="input-field" type="text" placeholder="Search Google" spellcheck="false">  
+                    </form>
+                    <form id="duckgo" >
+                        <a href="http://duckduckgo.com"><img class="img-goo" src="images/ddg_logo.png" alt="DuckDuckGo"  draggable="false"></a>                       
+                        <input id="input-dg" class="input-field" type="text" placeholder="&nbsp &nbsp Search DuckDuckGo" spellcheck="false">
+                    </form>
+                </div>
+
+                <div class="speed-central">
+                    <div class="launch-menu">
+                        <div id="add-dial-btn" class="add-dial-btn">
+                            <button class="add-icon">
+                                <div class="add-icon1"></div>
+                                <div class="add-icon2"></div>
+                                <p class="addlink-text" draggable="false">add link</p>
+                            </button>
+                        </div>  
+                        <div id="speed-card" class="speed-card"></div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div id="burger-menu" class="burger-menu">
+                <div class="burger-icon">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+                
+                <div id='burger-items' class="burger-items">
+                    <p class="burger-item-menu">speedDial menu</p>
+                    <p id="speeddial-data" class="burger-item">Export SpeedDial data</p>
+                    <p id="speeddial-links" class="burger-item">Export SpeedDial data <br> (links only)</p>
+                    <div >
+                        <p id="speeddial-import-btn" class="burger-item">Import SpeedDial data </p>
+                        <input  id="speeddial-import" class="speeddial-import" type="file" hidden="hidden">
+                    </div>      
+                    <p id='about' class="burger-item">About</p>
+                </div>
+            </div>
+            
+            <div id="central-modal" class="central-modal">
+                <div class="central-speed-modal">
+                    <div class="modal-bg">                     
+                        <p class="input-warning">Incorrect input!</p>                      
+                        <input selected id="name-input" class="input-modal" type="text" maxlength="15" name="WEB site name"  placeholder="website name">
+                        <input id="link-input" class="input-modal" type="text" name="WEB site link"  placeholder="website link">                      
+                        <button id="place-btn-modal" class="place-btn-modal" type="submit" >PLACE</button>
+                        <button id="replace-btn-modal" class="place-btn-modal" type="submit">PLACE</button>                     
+                        <button id="close-btn-modal" class="close-btn-modal" type="submit">
+                            <div>
+                                <div class="close-b-1"></div>
+                                <div class="close-b-2"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id='transparent-bg'></div>
+
+            <div class="about">             
+                <h2>Overview</h2>
+                <p>This speedDial expansion changes standard browser tab to minimal UI and fast new tab page with your bookmarks.</p>
+                <p>The main advantage of Speed Dial in comparison with the standard page is that you can add the links to the websites of your choice so you always have direct access to them.</p>
+                <p>Also with ability of "import and export" functionality save bookmarks as .txt file to your PC. Your bookmarks will not be lost after browser or system reinstallation. This function also allows you to transfer your saved bookmarks to other computers with speedDial installed instead of standard page.</p>
+                <p>The expansion also adds links for two major search engines, use as prefered.</p>
+                <h6>Version 1.0.0</h6>               
+                <h6>Made by BNSdesk</h6>               
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
